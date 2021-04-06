@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Citizenship test questions and answers</title>
+        <style>
+			.questions {
+				padding: 10px 50px;
+			}
+			.question__answer--right {
+				font-weight: bold;
+			}
+			.question__explanation {
+				background: #f9f5dc;
+				padding: 15px;
+			}
+		</style>
+    </head>
+    <body>
+          <h1>Citizenship questions</h1>
+          <ol class='questions'>
+            {{#each questions}}
+                <li class='question'>
+                    <h4>{{title}}</h4>
+                    <ol class='question__answer'>
+                        {{#each answers}}
+                            <li class="question__answer {{#ifEquals @index ../rightAnswerIndex}}question__answer--right{{/ifEquals}}">{{this}}</li>
+                        {{/each}}
+                    </ol>
+                    <p class="question__explanation">{{explanation}}</p>
+                </li>
+            {{/each}}
+          </ol>
+    </body>
+</html>

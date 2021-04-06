@@ -1,0 +1,25 @@
+{
+	"name": "citizenship-test-crawler",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "ts-node -T index.ts"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1",
+		"bottleneck": "^2.19.5",
+		"cheerio": "^1.0.0-rc.5",
+		"handlebars": "^4.7.7",
+		"lodash.flatten": "^4.4.0",
+		"lodash.uniqby": "^4.7.0",
+		"md5": "^2.3.0"
+	},
+	"devDependencies": {
+		"@types/cheerio": "^0.22.28",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.2.3"
+	}
+}
